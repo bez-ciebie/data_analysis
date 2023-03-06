@@ -1,6 +1,7 @@
 # data_analysis
 meeting analysis
 
+sqlite3数据库 + matplotlib可视化
 
 Userinfo存储了所有历史用户的信息；
 Meetings储存了所有历史会议的信息；
