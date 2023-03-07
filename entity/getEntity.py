@@ -7,7 +7,7 @@ def getUserInfo():
     print ("数据库打开成功")
 
     # 列表化userinfo表
-    userinfo = c.execute("SELECT U_ID,U_NAME,AGE,SEX,PROVINCE,REGIS_TIME  from USERINFO")
+    userinfo = c.execute("SELECT U_ID,U_NAME,AGE,GENDER,PROVINCE,REGIS_TIME  from USERINFO")
     get = list(userinfo)
     conn.close()
 

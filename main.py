@@ -16,6 +16,51 @@ Members存储了所有会议的人员名单；
 '''
 
 from entity import getEntity as get
-from data_proc import allmeeting
+from data_proc import allmeeting,age,allmeetingnumber,allusernumber,currentmeetingnumber,gender,onlineusernumber,province, registime
 
-allmeeting.ALLMEETING()
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.rc("font",family='MicroSoft YaHei')
+
+def drawAge():
+   #创建图形对象
+   fig1 = plt.figure()
+   #添加子图区域，参数值表示[left, bottom, width, height ]
+   ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
+   #准备数据
+   age_number = age.AGE()
+   age_box = ["<20","20_29","30-39","40_49","50_59",">60"]
+   ax.set_yticks([2,4,6,8,10])
+   #绘制柱状图
+   ax.bar(age_box,age_number)
+   plt.show()
+
+def drawGender():
+   #创建图形对象
+   fig1 = plt.figure()
+   #添加子图区域，参数值表示[left, bottom, width, height ]
+   ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
+   #准备数据
+   age_number = gender.GENDER()
+   age_box = ["female","male"]
+   ax.set_yticks([2,4,6,8,10])
+   #绘制柱状图
+   ax.bar(age_box,age_number)
+   plt.show()
+
+def drawProvince():
+   #创建图形对象
+   fig1 = plt.figure()
+   #添加子图区域，参数值表示[left, bottom, width, height ]
+   ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
+   #准备数据
+   age_number = province.PROVINCE()
+   age_box = [   '四川', '浙江', '福建', '江苏', '山东', '湖南', '安徽', '河北', '广东', '湖北', '吉林',   
+                           '山西', '江西', '广西', '贵州', '北京', '云南', '重庆', '河南', '陕西', '上海', '辽宁', '新疆',  
+                           '内蒙古', '黑龙江', '天津', '甘肃', '海南', '青海', '宁夏', '西藏']
+
+   ax.set_yticks([2,4,6,8,10])
+   #绘制柱状图
+   ax.bar(age_box,age_number)
+   plt.show()
+

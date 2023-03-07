@@ -10,7 +10,7 @@ def PROVINCE():
    #{11: 1, 7: 1, 4: 1}
    #[0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
    # 即：li[4]=1
-   province = [0 for _ in range(23)]
+   province = [0 for _ in range(31)]
 
    for each in get.getProvince():
       province[each[0]]+=1

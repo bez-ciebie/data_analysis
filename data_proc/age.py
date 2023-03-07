@@ -10,7 +10,7 @@ def AGE():
    #! age[‘<20’, ’20_29’, ’30-39’, ‘40_49’, ’50_59’, ’>60’]
    #! [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
    # 即：li[4]=1
-   age = [0 for _ in range(5)]
+   age = [0 for _ in range(6)]
 
    for each in get.getAge():
       age[judgeAge(each[0])]+= 1
