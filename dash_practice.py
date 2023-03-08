@@ -6,7 +6,6 @@ import plotly.express as px
 import pandas as pd
 
 
-
 app = Dash(__name__)
 app.title = "Meetings Analytics: Understand Your Meeting!"
 

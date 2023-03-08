@@ -5,7 +5,7 @@ from entity import getEntity as get
 
 
 ###   5.	历史会议列表allMeeting（MID的个数）
-def ALLMEETING():
-   return get.getAllMeetings()
+def allmeeting():
+   return get.getallmeetings()
 
-print(ALLMEETING())
+print(allmeeting())

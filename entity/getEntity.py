@@ -1,7 +1,8 @@
 import sqlite3
-# 以list形式返回userinfo
 
-def getUserInfo():
+
+# 以list形式返回userinfo
+def getuserinfo():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -14,7 +15,7 @@ def getUserInfo():
     return get
 
 # 以list形式返回meetings
-def getMeetings():
+def getmeetings():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -27,7 +28,7 @@ def getMeetings():
     return get
 
 # 以list形式返回会议members信息
-def getMembers():
+def getmembers():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -40,7 +41,7 @@ def getMembers():
     return get
 
 # 查找召开的会议数
-def getOnlineMeetings():
+def getonlinemeetings():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -53,7 +54,7 @@ def getOnlineMeetings():
     return get
 
 # 查找在线用户数量
-def getOnlineUser():
+def getonlineuser():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -66,7 +67,7 @@ def getOnlineUser():
     return get
 
 # 查找所有的会议
-def getAllMeetings():
+def getallmeetings():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -79,7 +80,7 @@ def getAllMeetings():
     return get
 
 # 查找所有省份
-def getProvince():
+def getprovince():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -92,7 +93,7 @@ def getProvince():
     return get
 
 # 查找所有性别
-def getGender():
+def getgender():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -105,7 +106,7 @@ def getGender():
     return get
 
 # 查找所有AGE
-def getAge():
+def getage():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -118,7 +119,7 @@ def getAge():
     return get
 
 # 查找所有regisTime
-def getRegistime():
+def getregistime():
     conn = sqlite3.connect('test.db')
     c = conn.cursor()
     print ("数据库打开成功")
@@ -130,4 +131,4 @@ def getRegistime():
 
     return get
 
-print(getRegistime())
+print(getregistime())

@@ -5,14 +5,14 @@ from entity import getEntity as get
 
 
 ###   8.	年龄区间的列表age（所有省份以及省份统计）age[‘<20’, ’20_29’, ’30-39’, ‘40_49’, ’50_59’, ’>60’]
-def AGE():
+def age():
    #！类似哈希表
    #! age[‘<20’, ’20_29’, ’30-39’, ‘40_49’, ’50_59’, ’>60’]
    #! [0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
    # 即：li[4]=1
    age = [0 for _ in range(6)]
 
-   for each in get.getAge():
+   for each in get.getage():
       age[judgeAge(each[0])]+= 1
 
    return age
@@ -31,4 +31,4 @@ def judgeAge(age):
    else:
       return 5
 
-print(AGE())
+print(age())

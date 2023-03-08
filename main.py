@@ -28,7 +28,7 @@ def drawAge():
    #添加子图区域，参数值表示[left, bottom, width, height ]
    ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
    #准备数据
-   age_number = age.AGE()
+   age_number = age.age()
    age_box = ["<20","20_29","30-39","40_49","50_59",">60"]
    ax.set_yticks([2,4,6,8,10])
    #绘制柱状图
@@ -41,7 +41,7 @@ def drawGender():
    #添加子图区域，参数值表示[left, bottom, width, height ]
    ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
    #准备数据
-   age_number = gender.GENDER()
+   age_number = gender.gender()
    age_box = ["female","male"]
    ax.set_yticks([2,4,6,8,10])
    #绘制柱状图
@@ -54,7 +54,7 @@ def drawProvince():
    #添加子图区域，参数值表示[left, bottom, width, height ]
    ax = fig1.add_axes([0.1, 0.1, 0.8, 0.8])
    #准备数据
-   age_number = province.PROVINCE()
+   age_number = province.province()
    age_box = [   '四川', '浙江', '福建', '江苏', '山东', '湖南', '安徽', '河北', '广东', '湖北', '吉林',   
                            '山西', '江西', '广西', '贵州', '北京', '云南', '重庆', '河南', '陕西', '上海', '辽宁', '新疆',  
                            '内蒙古', '黑龙江', '天津', '甘肃', '海南', '青海', '宁夏', '西藏']
@@ -64,3 +64,4 @@ def drawProvince():
    ax.bar(age_box,age_number)
    plt.show()
 
+drawProvince()

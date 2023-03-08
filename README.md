@@ -3,9 +3,11 @@ meeting analysis
 
 sqlite3数据库 + matplotlib可视化
 
+
 Userinfo存储了所有历史用户的信息；
 Meetings储存了所有历史会议的信息；
 Members存储了所有会议的人员名单；
+
 在创建新会议时，会将LOGIN_TIME= LOGOUT_TIME，会议结束时，重新将LOGOUT_TIME赋予当前时间。
 可视化功能如下，请根据括号内容完成程序，以左侧示例参数保存数据：
    1.	总用户人数allUserNumber（userinfo注册人数统计）

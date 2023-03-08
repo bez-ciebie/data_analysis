@@ -5,8 +5,8 @@ from entity import getEntity as get
 
 
 ###   1.	总用户人数allUserNumber（userinfo注册人数统计）
-def ALLUSERNUMBER():
+def allusernumber():
    #!!! userinfo中Uid按照顺序递增
-   return len(get.getUserInfo())
+   return len(get.getuserinfo())
 
-print(ALLUSERNUMBER())
+print(allusernumber())
